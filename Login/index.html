@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+
+    <meta name="description" content="MyPortfolio - Juan Pinero - HalcyonDevelopers">
+    <meta name="author" content="JuanPinero">
+    <title>Login | HalcyonDevelopers</title>
+    <link rel="shortcut icon" href="assets/IconoHalcyon.png" type="image/x-icon">
+    
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="modal.css">
+
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Lato:400,700,400italic,700italic" rel="stylesheet">
+    
+</head>
+
+<body>
+
+    <section>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="box">
+            <div class="cuadrado" style="--i: 0"></div>
+            <div class="cuadrado" style="--i: 1"></div>
+            <div class="cuadrado" style="--i: 2"></div>
+            <div class="cuadrado" style="--i: 3"></div>
+            <div class="cuadrado" style="--i: 4"></div>
+            <div class="container">
+            <div class="form">
+                <h2>Login Form</h2>
+                <form id="login-form">
+                    <div>
+                        <input class="inputbox" type="text" name="" id="username" placeholder="Username" required>
+                    </div>
+                    <div>
+                        <input class="inputbox" type="password" name="" id="username" placeholder="password" required>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" value="Login" />
+                      </div>
+                </form>
+                <p class="olvidar">
+                    Do you forget the password? <br> <a  data-bs-toggle="modal" data-bs-target="#CustomForgotAccount">Clic here</a>
+                </p>
+                
+                <p class="olvidar">
+                    You do not have an account?? <br> <a  data-bs-toggle="modal" data-bs-target="#CustomCreateAccount">Creat</a>
+                </p>
+    
+            </div>
+                
+            </div>
+
+
+        </div>
+        
+       
+    </section>
+
+<!--MODAL PARA CREAR CUENTA-->
+<div class="CustomModal modal fade" id="CustomCreateAccount" tabindex="-1" aria-labelledby="CustomCreateAccount" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+            <div class="modal-body text-center pb-5">
+                <div class="CustomContainer">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+
+                            <!-- Modal - Title -->
+                            <div class="CustomRegisterContainer">
+                                <h2>Registro</h2>
+                                <form id="CustomRegisterForm">
+
+                                    <div>
+                                        <label for="CustomNewUsername">Nuevo Usuario:</label>
+                                        <input type="text" id="CustomNewUsername" required>
+                                    </div>
+
+                                    <div>
+                                        <label for="CustomNewPassword">Nueva contraseña:</label>
+                                        <input type="password" id="CustomNewPassword" required>
+                                        <label for="CustomRepeatPassword">Repetir contraseña:</label>
+                                        <input type="password" id="CustomRepeatPassword" required>
+                                    </div>
+
+                                    <button type="submit">Registrarse</button>
+                                </form>
+                                <p>¿Ya tienes una cuenta? <br> <a href="index.html">Iniciar Sesión</a></p>
+                            </div>
+                            <script src="customregister.js"></script>
+                            <!-- Modal - Title -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--MODAL PARA CREAR CUENTA-->
+
+<!--MODAL PARA RECUPERAR CUENTA-->
+<div class="CustomModal modal fade" id="CustomForgotAccount" tabindex="-1" aria-labelledby="CustomForgotAccount" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+            <div class "modal-body text-center pb-5">
+                <div class="CustomContainer">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+
+                            <!-- Modal - Title -->
+                            <div class="CustomRegisterContainer">
+                                <h2>Recuperar cuenta</h2>
+                                <form id="CustomRegisterForm">
+                                    <div>
+                                        <input class="CustomInputBox" type="text" name="" id="CustomEmail" placeholder="Correo electrónico" required>
+                                    </div>
+                                    <div>
+                                        <input class="CustomInputBox" type="submit" value="Enviar Correo">
+                                    </div>
+                                </form>
+                            </div>
+                            <script src="customregister.js"></script>
+                            <!-- Modal - Title -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--MODAL PARA RECUPERAR CUENTA-->
+
+    <script src="login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+                       
+
+
+    
+</body>
+</html>
