@@ -202,3 +202,96 @@ section .box .container .form .olvidar a {
     transform: translateY(40px);
   }
 }/*# sourceMappingURL=styles.css.map */
+
+//yasmeen -- tables and question 11,12
+* {
+  box-sizing: border-box;
+}
+/* for the outside border */
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px 0px 0px 0px;
+}
+
+div.box {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto 0 auto;
+  padding: 5% 0 1% 0;
+  text-align: center;
+  background: url("border/b1.gif") top left no-repeat, url("border/b2.gif") top right no-repeat, url("border/b3.gif") bottom left no-repeat, url("border/b4.gif") bottom right no-repeat, url("border/ba.gif") top repeat-x, url("border/bb.gif") left repeat-x , url("border/bc.gif") right repeat-y, url("border/bd.gif") bottom repeat-x ;
+}
+
+
+.row{
+
+  text-align: left;
+}
+.pair1{
+
+  text-align: left;
+}
+
+table{
+  margin: 0 auto 0 auto;
+  border-collapse: collapse;
+  border: solid black 10px;
+  background-color: #e9e68a;
+  }
+
+
+td{
+  border: 1px solid #ddd;
+}
+th{
+  border: 1px solid #ddd;
+}
+
+/* th is the son of tr reference is th */
+tr:nth-of-type(even) > th {
+  background-color: #e0e0d1;
+  border: 20;
+}
+tr:nth-of-type(even) > td
+{
+  background-color: #e0e0d1;
+}
+
+/* */
+tr td:nth-last-child(1)
+{
+  background-color: #275493;
+  color: white;
+/*  font-size: 100px;*/
+}
+
+tr th:last-child
+{
+  background-color:#275493;
+}
+
+th.col,
+th.collast {
+  color: #000000;
+  text-align: center;
+  font-size: 120%;
+}
+
+td.rowlast,
+td.rowlast2,
+caption {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+td.rowlast,
+td.rowlast2 {
+  border: 5px dashed #eb3232;
+}
+tr:nth-child(21)>td{
+  background-color: #ddd;
+  color:blue ;
+
+}
